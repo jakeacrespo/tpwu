@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import { Marker } from '@react-google-maps/api';
 
 import Box from '@pagerland/common/src/components/Box';
 import Container from '@pagerland/common/src/components/Container';
-import Icon from '@pagerland/common/src/components/Icon';
+// import Icon from '@pagerland/common/src/components/Icon';
 import Typography from '@pagerland/common/src/components/Typography';
-import Grid from '@pagerland/common/src/components/Grid';
+// import Grid from '@pagerland/common/src/components/Grid';
 import GoogleMaps from '@pagerland/common/src/components/GoogleMaps';
 
 import data from '../../data';
