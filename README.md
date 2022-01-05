@@ -1,6 +1,6 @@
-# Pagerland
+# TPWU - Pagerland Template
 
-Pagerland is offers a great, smooth looking and fast landing page templates built on Gatsby and React.
+Pagerland Template offers a great, smooth looking and fast landing page templates built on Gatsby and React.
 
 Original designs crafted in Figma suits perfectly for marketing, startups and all creative needs.
 Pagerland main theme can be easily customized by users.
