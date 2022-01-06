@@ -186,7 +186,7 @@ export default {
   //   ],
   // },
   location: {
-    title: textToMultiline`Panamá: Incredible Location.\nLive The Experience.`,
+    title: textToMultiline`Panama: Incredible Location.\nLive The Experience.`,
     text: 'Discover a destiny filled with adventure, beaches, mountains, cool people, and many surprises to delight your senses.',
     text2: 'Join us on the journey of your life',
     counters: [
@@ -374,9 +374,9 @@ export default {
           src: gatun2,
           srcSet: `${gatun2} 1x, ${gatun2} 2x`,
         },
-        title: 'Panamá Canal',
+        title: 'Panama Canal',
         text:
-          'Within the heart of Panamá, the Canal connects the whole world that unifies and enriches the global market through the veins of the Pacífic and Atlantic Oceans.',
+          'Within the heart of Panama, the Canal connects the whole world that unifies and enriches the global market through the veins of the Pacífic and Atlantic Oceans.',
         cta: {
           as: 'a',
           label: 'Learn more',
@@ -545,7 +545,7 @@ export default {
         // },
         {
           icon: MapMarker,
-          text: textToMultiline`Panamá, Ciudad de Panamá`,
+          text: textToMultiline`Panama, Panama City`,
         },
         {
           icon: Phone,
