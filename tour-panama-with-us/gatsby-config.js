@@ -2,9 +2,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Pagerland Gatsby',
-    description: '',
-    author: 'Pagerland Team',
+    title: 'Tour Panama With Us',
+    description: 'Discover The Paradise',
+    author: 'Tour Panama With Us',
   },
   pathPrefix: process.env.GATSBY_APP_DIR || '',
   plugins: [
@@ -40,8 +40,8 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        background_color: `#189AB4`,
-        theme_color: `#189AB4`,
+        background_color: `#FFF`,
+        theme_color: `#FFF`,
         display: 'minimal-ui',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },

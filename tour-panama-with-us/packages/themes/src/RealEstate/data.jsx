@@ -149,7 +149,7 @@ export default {
       srcSet: `${background} 1x, ${background2x} 2x`,
       alt: 'Bocas del Toro',
     },
-    title: 'Tour Panamá With Us',
+    title: 'Tour Panama With Us',
     price: 'Discover The Paradise',
     cta: {
       to: 'contact',
