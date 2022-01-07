@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Helmet } from 'react-helmet';
+import { WhatsApp } from 'react-whatsapp-component';
 
 import Theme, { theme } from '@pagerland/themes/src/RealEstate';
 import {
@@ -18,19 +19,16 @@ import {
   Footer,
 } from '@pagerland/themes/src/RealEstate/containers';
 
-import preview from '@pagerland/themes/src/RealEstate/assets/preview.jpg';
-
 import SEO from '../components/SEO';
 
-const RealEstate = ({ url }) => (
+const RealEstate = () => (
   <Theme>
     <Helmet>
       <link href={theme.typography.googleFont} rel="stylesheet" />
       <meta name="theme-color" content={theme.colors.primary} />
-      <meta property="og:image" content={`${url}${preview}`} />
     </Helmet>
-    <SEO title="Tour Panamá With Us" />
-
+    <SEO title="Tour Panama With Us" />
+    <WhatsApp phone="50769752528" text="Hi, I'm interested in touring Panama with you!" />
     <Navbar />
     <Welcome name="" />
     {/* <About name="about" /> */}
@@ -47,10 +45,6 @@ const RealEstate = ({ url }) => (
 
 RealEstate.propTypes = {
   url: PropTypes.string,
-};
-
-RealEstate.defaultProps = {
-  url: 'https://pager.land/gatsby/',
 };
 
 export default RealEstate;
