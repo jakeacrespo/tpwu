@@ -28,7 +28,6 @@ const RealEstate = () => (
       <meta name="theme-color" content={theme.colors.primary} />
     </Helmet>
     <SEO title="Tour Panama With Us" />
-    <WhatsApp phone="50769752528" text="Hi, I'm interested in touring Panama with you!" target="_blank" />
     <Navbar />
     <Welcome name="" />
     {/* <About name="about" /> */}
@@ -40,6 +39,7 @@ const RealEstate = () => (
     <Contact name="contact" />
     {/* <SimilarProperties name="similar-properties" /> */}
     <Footer name="about-us" />
+    <WhatsApp phone="50769752528" text="Hi, I'm interested in touring Panama with you!" target="_blank" />
   </Theme>
 );
 
