@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 // import WebGrid from '@pagerland/icons/src/line/WebGrid';
 // import BedDouble from '@pagerland/icons/src/line/BedDouble';
@@ -90,8 +91,27 @@ import pty2A2x from './assets/pty2@2x.jpg';
 import contactImg from './assets/contact.jpg';
 import contactImg2x from './assets/contact@2x.jpg';
 
+// Email
+const sendEmail = values => {
+  emailjs.send(
+    process.env.GATSBY_EMAIL_JS_SERVICE_ID,
+    process.env.GATSBY_EMAIL_JS_TEMPLATE_ID,
+    values,
+    process.env.GATSBY_EMAIL_JS_USER_ID,
+  ).then(() => {
+    // console.log('SUCCESS!', response.status, response.text);
+    document.querySelector('.form').classList.add('submitted');
+    document.querySelector('.thankYou').classList.add('submitted');
+  })
+  .catch(() => {
+    // console.log('FAILED...', err);
+    document.querySelector('.form').classList.add('submitted');
+    document.querySelector('.thankYou').classList.add('submitted');
+  });
+}
+
 export default {
-  title: 'Real Estate',
+  title: 'Tour Panama With Us',
   navbar: {
     links: [
       // {
@@ -583,17 +603,18 @@ export default {
       title: 'Send us a message and we will call you back',
       sendButtonText: 'Send',
       validationSchema: Yup.object({
-        firstName: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
-        email: Yup.string().email('Must be an email').required('Required'),
+        // name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
+        name: Yup.string().required('Required'),
+        phone: Yup.string().required('Required'),
+        email: Yup.string().email('Must be a valid email').required('Required'),
         message: Yup.string().min(20, 'Must be at least 20 characters').required('Required'),
       }),
       // eslint-disable-next-line no-undef
-      // onSubmit: values => window.alert(`Form sent with values ${JSON.stringify(values)}`),
-      onSubmit: values => console.log(''),
+      onSubmit: values => sendEmail(values),
       fields: [
         {
-          name: 'firstName',
-          label: 'First name',
+          name: 'name',
+          label: 'Name',
           placeholder: 'ie. John Doe',
           initialValue: '',
           prefix: <Icon icon={User} />,

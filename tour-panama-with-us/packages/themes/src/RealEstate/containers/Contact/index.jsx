@@ -72,7 +72,7 @@ const Contact = ({
             ))}
           </Box>
         </Box>
-        <Box {...FormProps}>
+        <Box {...FormProps} className={`form ${form.submitted ? "submitted" : ""}`}>
           <Formik
             validationSchema={form.validationSchema}
             onSubmit={form.onSubmit}
@@ -100,6 +100,10 @@ const Contact = ({
           </Formik>
         </Box>
       </Grid>
+      <Box className={`thankYou ${form.submitted ? "submitted" : ""}`}>
+        <h2 className="styledcomponents__Wrapper-faaAxV hgrpoy">Thank you for contacting us!</h2>
+        <p>Please allow 24 hours for a representative to get in touch with you.</p>
+      </Box>
     </Container>
   </Box>
 );
@@ -131,6 +135,7 @@ Contact.propTypes = {
     validationSchema: PropTypes.object,
     onSubmit: PropTypes.func,
     fields: PropTypes.arrayOf(PropTypes.object),
+    submitted: PropTypes.bool
   }),
   WrapperProps: PropTypes.object,
   ContainerProps: PropTypes.object,

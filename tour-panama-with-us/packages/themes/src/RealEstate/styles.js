@@ -99,6 +99,33 @@ export const global = css`
     font-weight: 900;
     color: #262522;
   }
+
+  #gatsby-focus-wrapper > a {
+    z-index: 9999999;
+  }
+
+  .form {
+    &.submitted {
+      display: none;
+    }
+  }
+
+  .thankYou {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    p {
+      margin-top: 0px;
+    }
+
+    &.submitted {
+      display: flex;
+    }
+  }
 `;
 
 export const breakpoints = ['450px', '768px', '1170px', '1440px'];
