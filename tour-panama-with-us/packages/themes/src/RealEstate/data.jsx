@@ -361,7 +361,7 @@ export default {
         ],
         title: 'Bocas del Toro',
         text:
-          'Tropical Paradise in the middle of the World, spectacular white sand island and crystal clear waters.',
+          'Tropical Paradise in the middle of the World, spectacular white sand islands and crystal clear waters.',
       },
       {
         slides: [
@@ -396,7 +396,7 @@ export default {
         },
         title: 'Panama Canal',
         text:
-          'Within the heart of Panama, the Canal connects the whole world that unifies and enriches the global market through the veins of the Pacífic and Atlantic Oceans.',
+          'Within the heart of Panama, the Canal connects the whole world that unifies and enriches the global market through the veins of the Pacific and Atlantic Oceans.',
         cta: {
           as: 'a',
           label: 'Learn more',
